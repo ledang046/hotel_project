@@ -1,0 +1,223 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	
+	width: 100%;
+}
+.sidebar{
+	width: 350px;
+	background-color: #d1ae50;
+	min-height: 100vh;
+	position: fixed;
+	transition: 0.5s;
+	border-right: 1px solid black;
+}
+.content
+{
+	width: calc(100% - 350px);
+	float: right;
+	padding-left: 15px;
+	transition: 0.5s;
+
+}
+.wrapper
+{
+	padding: 0 15px;	
+}
+.title
+{
+	font-size: 20	px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.title button 
+{
+	background-color: #d1ae50;
+	color: black;
+	outline: unset;
+	padding: 3px;
+}
+form{
+	width: 70%;
+	margin: 0 auto;
+}
+.form-group
+{
+	margin-bottom: 15px;
+}
+.form-group label
+{
+	font-size: 18px;
+}
+input[name="product_name"],select
+{
+	width: 100%;
+	margin-top: 5px;
+	height: 25px;
+}
+
+select
+{
+	height: 35px;
+}
+input[type="button"]
+{
+	font-size: 18px;
+	padding: 10px 15px;
+	color: white;
+}
+input[type="button"]:first-child
+{
+	background-color: skyblue;
+}
+input[type="button"]:last-child
+{
+	background-color: #b21f2d;
+}
+.open_sidebar
+{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.un_active
+{
+	margin-left: -350px;
+
+}
+.header_content
+{
+	padding-left: 20px 15px;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+}
+
+.active_content
+{
+	width: 100%;
+}
+@media only screen and (max-width: 992px)
+{
+	/*.content
+	{
+		background-color: red;
+	}*/
+}
+.form_search
+{
+	float: right;
+}
+.form_search form
+{
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.form_search form input
+{
+	height: 30px;
+	padding-right: 32px;
+}
+.form_search form button
+{
+	position: absolute;
+	background-color: white;
+	border: unset;
+	right:2px;
+	outline: unset;
+	top:1px;
+}
+.form_search form button:focus
+{
+	outline: unset;
+}
+
+.header_sidebar
+{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 15px;
+	border-bottom: 1px solid black;
+	margin-bottom: 0px;
+}
+.menu_sidbar
+{
+}
+.menu_sidbar ul
+{
+padding: 0;
+list-style-type: none;
+}
+.menu_sidbar ul li
+{
+	padding: 15px;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+
+}
+.menu_sidbar ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+.menu_sidbar ul li:hover
+{	
+	background-color: white;
+}
+.menu_sidbar ul li.active
+{
+	background-color: white;
+}
+.list_product table
+{
+	width: 100%;
+}
+.list_product table th,.list_product table td
+{
+	border:  1px solid black;
+	padding: 5px;
+	font-size: 16px;
+}
+.btn-add
+{
+	float: right;
+	padding: 10px 15px;
+	background-color: green;
+	color: white;
+}
+.btn-add:focus
+{
+	outline: unset;
+}
+.paginate
+{
+	margin-top: 20px;
+	text-align: center;
+}
+.paginate ul
+{
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+.paginate ul li
+{
+	margin: 5px;
+}
+.paginate ul li a
+{
+	text-decoration: none;
+	color: black;
+	padding: 10px 15px;
+	border: 1px solid black;
+}
+.paginate ul li a.active
+{
+	background-color: #d1ae50;
+	color: white;
+}
+/*-------------------index2-----------------------------------------*/

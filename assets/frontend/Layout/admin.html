@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device,initial-scale=1.0">
+	<link rel="stylesheet" href="../Bootstrap/bootstrap.min.css">
+	<meta name="viewport" content="width=device,initial-scale=1.0">
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="../Css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="main">
+       <div class="sidebar">
+         	 <div class="header_sidebar">
+         	 	Admin
+         	 </div>
+         	 <div class="menu_sidbar">
+         	 	<ul>
+         	 		<li><a href="hotel.html">Trang chủ</a></li>
+         	 		<li><a href="#">Quản lý user</a></li>
+         	 		<li class="active"><a href="#">Quản lý phòng</a></li>
+         	 		<li><a href="#">Quản lý sự kiện</a></li>
+         	 		<li><a href="#">Blog</a></li>
+         	 		<li><a href="#">Giỏ hàng</a></li>
+         	 	</ul>
+         	 </div>     
+       </div>
+       <div class="content">
+       	 <div class="wrapper">	
+       	  <div class="header_content">
+		      <span class="open_sidebar">
+		      	<i class="fas fa-bars"></i>
+		      </span>
+		      <div class="form_search">
+		      	<form>
+		      		<input type="text" name="keyword" placeholder="Nhập từ khóa">
+		      		<button type="submit"><i class="fas fa-search"></i></button>
+		      	</form>
+		      </div>  
+       	  </div>
+       	 
+          <div class="title">Danh sách phòng
+          		<button class="btn-add">Thêm mới</button>
+          </div>
+          <div class="list_product">
+          	<table>
+          		<thead>
+          			<tr>
+          				<th>STT</th>
+          				<th>Ảnh</th>
+          				<th>Tên phòng</th>
+          				<th>Kiểu phòng</th>
+          				<th>Mô tả</th>
+          				<th>Action</th>
+          			</tr>
+          		</thead>
+          		<tbody>
+          			<tr>
+          				<td>1</td>
+          				<td>
+          					<img src="">
+          				</td>
+          				<td>
+          					Phòng sang trọng
+          				</td>
+          				<td>
+          					2 giường , 1 ghế
+          				</td>
+          				<td>
+          					Mô tả
+          				</td>
+          				<td>
+          					<a href="">Chi tiết</a>
+          					<a href="">Cập nhập</a>
+          					<a href="">Xóa</a>
+          				</td>
+          			</tr>
+          			<tr>
+          				<td>2</td>
+          				<td>
+          					<img src="">
+          				</td>
+          				<td>
+          					Phòng sang trọng
+          				</td>
+          				<td>
+          					2 giường , 1 ghế
+          				</td>
+          				<td>
+          					Mô tả
+          				</td>
+          				<td>
+          					<a href="">Chi tiết</a>
+          					<a href="">Cập nhập</a>
+          					<a href="">Xóa</a>
+          				</td>
+          			</tr>
+          			<tr>
+          				<td>3</td>
+          				<td>
+          					<img src="">
+          				</td>
+          				<td>
+          					Phòng sang trọng
+          				</td>
+          				<td>
+          					2 giường , 1 ghế
+          				</td>
+          				<td>
+          					Mô tả
+          				</td>
+          				<td>
+          					<a href="">Chi tiết</a>
+          					<a href="">Cập nhập</a>
+          					<a href="">Xóa</a>
+          				</td>
+          			</tr>
+          		</tbody>
+          	</table>
+          	<div class="paginate">
+                     <ul>
+                      <li>
+                          <a href="">
+                            <i class="fas fa-chevron-left"></i>
+                          </a>
+                        </li>
+                        <li>
+                           <a href="#" class="active">1</a>
+                        </li>
+                        <li>
+                           <a href="#">2</a>
+                        </li>
+                        <li>
+                           <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fas fa-chevron-right"></i>
+                          </a>
+                        </li>
+                     </ul>
+                 </div>
+          </div>
+          <div class="form_wrapper">
+          	<form action="" method="POST">
+                <div clas="form-group">
+                   <label>Tên phòng</label>
+                   <input type="text" name="product_name" id="input_name" value="">
+                </div>
+                <div class="form-group">
+                	<label>Loại phòng</label>
+                	<select name="product_category" id="slt_category">
+                		<option value="1">Một giường</option>
+                		<option value="2">Hai giường</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="button" id="btn-save" value="Lưu">
+                    <input type="button" value="Hủy">
+                </div>    
+          	</form>
+          </div>
+      	</div>
+       </div>
+  </div>
+<footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="../Js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="../Js/adminjs.js"></script>
+
+</footer>
+</body>
+</html>
